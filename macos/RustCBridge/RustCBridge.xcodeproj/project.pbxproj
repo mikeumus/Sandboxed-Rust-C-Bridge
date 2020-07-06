@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2766853A24B1755E00C3937E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766853924B1755E00C3937E /* AppDelegate.swift */; };
+		2766853C24B1755E00C3937E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766853B24B1755E00C3937E /* ViewController.swift */; };
+		2766853E24B1755F00C3937E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2766853D24B1755F00C3937E /* Assets.xcassets */; };
+		2766854124B1756000C3937E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2766853F24B1756000C3937E /* Main.storyboard */; };
+		2766854D24B1756000C3937E /* RustCBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766854C24B1756000C3937E /* RustCBridgeTests.swift */; };
+		2766855824B1756000C3937E /* RustCBridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766855724B1756000C3937E /* RustCBridgeUITests.swift */; };
+		2766856924B175C100C3937E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2766856824B175B600C3937E /* libresolv.tbd */; };
+		2766856F24B1ADBE00C3937E /* RustGreetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766856E24B1ADBE00C3937E /* RustGreetings.swift */; };
+		2766857224B2C2BA00C3937E /* librust_write.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2766857124B2C2A500C3937E /* librust_write.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2766854924B1756000C3937E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2766852E24B1755E00C3937E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2766853524B1755E00C3937E;
+			remoteInfo = RustCBridge;
+		};
+		2766855424B1756000C3937E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2766852E24B1755E00C3937E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2766853524B1755E00C3937E;
+			remoteInfo = RustCBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2766853624B1755E00C3937E /* RustCBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustCBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2766853924B1755E00C3937E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2766853B24B1755E00C3937E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2766853D24B1755F00C3937E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2766854024B1756000C3937E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2766854224B1756000C3937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2766854324B1756000C3937E /* RustCBridge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RustCBridge.entitlements; sourceTree = "<group>"; };
+		2766854824B1756000C3937E /* RustCBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustCBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2766854C24B1756000C3937E /* RustCBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustCBridgeTests.swift; sourceTree = "<group>"; };
+		2766854E24B1756000C3937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2766855324B1756000C3937E /* RustCBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RustCBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2766855724B1756000C3937E /* RustCBridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustCBridgeUITests.swift; sourceTree = "<group>"; };
+		2766855924B1756000C3937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2766856824B175B600C3937E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		2766856B24B175F200C3937E /* RustWrite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustWrite-Bridging-Header.h"; sourceTree = "<group>"; };
+		2766856E24B1ADBE00C3937E /* RustGreetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreetings.swift; sourceTree = "<group>"; };
+		2766857024B2C1C800C3937E /* rust_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rust_functions.h; path = ../../../cargo/src/rust_functions.h; sourceTree = "<group>"; };
+		2766857124B2C2A500C3937E /* librust_write.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust_write.a; path = ../../cargo/target/universal/release/librust_write.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2766853324B1755E00C3937E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766856924B175C100C3937E /* libresolv.tbd in Frameworks */,
+				2766857224B2C2BA00C3937E /* librust_write.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766854524B1756000C3937E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766855024B1756000C3937E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2766852D24B1755E00C3937E = {
+			isa = PBXGroup;
+			children = (
+				2766853824B1755E00C3937E /* RustCBridge */,
+				2766854B24B1756000C3937E /* RustCBridgeTests */,
+				2766855624B1756000C3937E /* RustCBridgeUITests */,
+				2766853724B1755E00C3937E /* Products */,
+				2766856724B175B600C3937E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2766853724B1755E00C3937E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2766853624B1755E00C3937E /* RustCBridge.app */,
+				2766854824B1756000C3937E /* RustCBridgeTests.xctest */,
+				2766855324B1756000C3937E /* RustCBridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2766853824B1755E00C3937E /* RustCBridge */ = {
+			isa = PBXGroup;
+			children = (
+				2766857024B2C1C800C3937E /* rust_functions.h */,
+				2766853924B1755E00C3937E /* AppDelegate.swift */,
+				2766853B24B1755E00C3937E /* ViewController.swift */,
+				2766853D24B1755F00C3937E /* Assets.xcassets */,
+				2766853F24B1756000C3937E /* Main.storyboard */,
+				2766854224B1756000C3937E /* Info.plist */,
+				2766854324B1756000C3937E /* RustCBridge.entitlements */,
+				2766856B24B175F200C3937E /* RustWrite-Bridging-Header.h */,
+				2766856E24B1ADBE00C3937E /* RustGreetings.swift */,
+			);
+			path = RustCBridge;
+			sourceTree = "<group>";
+		};
+		2766854B24B1756000C3937E /* RustCBridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2766854C24B1756000C3937E /* RustCBridgeTests.swift */,
+				2766854E24B1756000C3937E /* Info.plist */,
+			);
+			path = RustCBridgeTests;
+			sourceTree = "<group>";
+		};
+		2766855624B1756000C3937E /* RustCBridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2766855724B1756000C3937E /* RustCBridgeUITests.swift */,
+				2766855924B1756000C3937E /* Info.plist */,
+			);
+			path = RustCBridgeUITests;
+			sourceTree = "<group>";
+		};
+		2766856724B175B600C3937E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2766857124B2C2A500C3937E /* librust_write.a */,
+				2766856824B175B600C3937E /* libresolv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2766853524B1755E00C3937E /* RustCBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2766855C24B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridge" */;
+			buildPhases = (
+				2766853224B1755E00C3937E /* Sources */,
+				2766853324B1755E00C3937E /* Frameworks */,
+				2766853424B1755E00C3937E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustCBridge;
+			productName = RustCBridge;
+			productReference = 2766853624B1755E00C3937E /* RustCBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2766854724B1756000C3937E /* RustCBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2766855F24B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridgeTests" */;
+			buildPhases = (
+				2766854424B1756000C3937E /* Sources */,
+				2766854524B1756000C3937E /* Frameworks */,
+				2766854624B1756000C3937E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2766854A24B1756000C3937E /* PBXTargetDependency */,
+			);
+			name = RustCBridgeTests;
+			productName = RustCBridgeTests;
+			productReference = 2766854824B1756000C3937E /* RustCBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2766855224B1756000C3937E /* RustCBridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2766856224B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridgeUITests" */;
+			buildPhases = (
+				2766854F24B1756000C3937E /* Sources */,
+				2766855024B1756000C3937E /* Frameworks */,
+				2766855124B1756000C3937E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2766855524B1756000C3937E /* PBXTargetDependency */,
+			);
+			name = RustCBridgeUITests;
+			productName = RustCBridgeUITests;
+			productReference = 2766855324B1756000C3937E /* RustCBridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2766852E24B1755E00C3937E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = MDM;
+				TargetAttributes = {
+					2766853524B1755E00C3937E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2766854724B1756000C3937E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 2766853524B1755E00C3937E;
+					};
+					2766855224B1756000C3937E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 2766853524B1755E00C3937E;
+					};
+				};
+			};
+			buildConfigurationList = 2766853124B1755E00C3937E /* Build configuration list for PBXProject "RustCBridge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2766852D24B1755E00C3937E;
+			productRefGroup = 2766853724B1755E00C3937E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2766853524B1755E00C3937E /* RustCBridge */,
+				2766854724B1756000C3937E /* RustCBridgeTests */,
+				2766855224B1756000C3937E /* RustCBridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2766853424B1755E00C3937E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766853E24B1755F00C3937E /* Assets.xcassets in Resources */,
+				2766854124B1756000C3937E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766854624B1756000C3937E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766855124B1756000C3937E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2766853224B1755E00C3937E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766856F24B1ADBE00C3937E /* RustGreetings.swift in Sources */,
+				2766853C24B1755E00C3937E /* ViewController.swift in Sources */,
+				2766853A24B1755E00C3937E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766854424B1756000C3937E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766854D24B1756000C3937E /* RustCBridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2766854F24B1756000C3937E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2766855824B1756000C3937E /* RustCBridgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2766854A24B1756000C3937E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2766853524B1755E00C3937E /* RustCBridge */;
+			targetProxy = 2766854924B1756000C3937E /* PBXContainerItemProxy */;
+		};
+		2766855524B1756000C3937E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2766853524B1755E00C3937E /* RustCBridge */;
+			targetProxy = 2766855424B1756000C3937E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2766853F24B1756000C3937E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2766854024B1756000C3937E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2766855A24B1756000C3937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2766855B24B1756000C3937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2766855D24B1756000C3937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustCBridge/RustCBridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RustCBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../cargo/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RustCBridge/RustWrite-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2766855E24B1756000C3937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RustCBridge/RustCBridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RustCBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../cargo/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/RustCBridge/RustWrite-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2766856024B1756000C3937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				INFOPLIST_FILE = RustCBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustCBridge.app/Contents/MacOS/RustCBridge";
+			};
+			name = Debug;
+		};
+		2766856124B1756000C3937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				INFOPLIST_FILE = RustCBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RustCBridge.app/Contents/MacOS/RustCBridge";
+			};
+			name = Release;
+		};
+		2766856324B1756000C3937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				INFOPLIST_FILE = RustCBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RustCBridge;
+			};
+			name = Debug;
+		};
+		2766856424B1756000C3937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SBBJA9V9XW;
+				INFOPLIST_FILE = RustCBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdm.RustCBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RustCBridge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2766853124B1755E00C3937E /* Build configuration list for PBXProject "RustCBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2766855A24B1756000C3937E /* Debug */,
+				2766855B24B1756000C3937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2766855C24B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2766855D24B1756000C3937E /* Debug */,
+				2766855E24B1756000C3937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2766855F24B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2766856024B1756000C3937E /* Debug */,
+				2766856124B1756000C3937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2766856224B1756000C3937E /* Build configuration list for PBXNativeTarget "RustCBridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2766856324B1756000C3937E /* Debug */,
+				2766856424B1756000C3937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2766852E24B1755E00C3937E /* Project object */;
+}

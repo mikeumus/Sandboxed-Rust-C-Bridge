@@ -1,0 +1,11 @@
+[package]
+name = "rust_sandox_write"
+version = "0.1.1"
+authors = ["mikeumus <mikeumus@gmail.com>"]
+description = "Example static library project built for iOS"
+publish = false
+edition = "2018"
+
+[lib]
+name = "rust_write"
+crate-type = ["staticlib", "cdylib"]
