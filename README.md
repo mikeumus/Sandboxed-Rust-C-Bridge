@@ -9,5 +9,8 @@ Derived from [@fluffyemily](https://github.com/fluffyemily)'s "Building and Depl
  - Mozilla Article: https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-06-rust-on-ios.html 
  - Article Github: https://github.com/fluffyemily/cross-platform-rust 
  
- Here's a backup download of that article as a PDF in case the above article becomes unavilable: 
+Here's a backup download of that article as a PDF in case the above article becomes unavilable: 
  - https://github.com/mikeumus/Sandboxed-Rust-C-Bridge/blob/master/Building%20and%20Deploying%20a%20Rust%20library%20on%20iOS.pdf
+
+Another great website for bridging Rust to all sorts of languages:
+ - http://jakegoulding.com/rust-ffi-omnibus/
